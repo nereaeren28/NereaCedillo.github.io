@@ -1,13 +1,66 @@
 body {
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    color: #333;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
 h1 {
-    color: #4CAF50;
+    color: #333;
 }
 
-p {
-    font-size: 18px;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
 }
+
+#likeCount {
+    font-size: 20px;
+    color: green;
+}
+
+img {
+    margin: 20px 0;
+    transition: width 0.3s ease;
+}
+
+#favoritesTable {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#favoritesTable th, #favoritesTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#favoritesTable th {
+    background-color: #f4f4f4;
+}
+
+#loadingMessage {
+    font-size: 20px;
+    color: red;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
