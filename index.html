@@ -3,10 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title id="blogTitle">Mi Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Bienvenido a mi web!</h1>
-    <p>Esta es mi primera página publicada en GitHub Pages.</p>
+    <h1>Bienvenido a mi Blog Personal</h1>
+
+    <!-- Mensaje Animado -->
+    <div id="animatedMessage" style="position: absolute; top: 20px; left: 0;">
+        ¡Bienvenidos a mi blog! Esto se mueve.
+    </div>
+
+    <!-- Contador de Likes -->
+    <h2>Contador de Likes</h2>
+    <img src="tu-imagen.jpg" alt="Imagen de blog" id="blogImage" width="300">
+    <button id="likeButton">Like</button>
+    <p id="likeCount">Likes: 0</p>
+
+    <!-- Cambiar color de texto -->
+    <h3>Cambiar color del texto</h3>
+    <input type="color" id="colorPicker">
+    
+    <!-- Contador de palabras en comentario -->
+    <h3>Comentarios</h3>
+    <textarea id="commentBox" placeholder="Escribe un comentario..."></textarea>
+    <p id="wordCount">Palabras: 0</p>
+
+    <!-- Temporizador -->
+    <h2>Temporizador de cuenta regresiva</h2>
+    <p id="timer">10</p>
+    <button id="startTimer">Iniciar Temporizador</button>
+
+    <!-- Tabla de Series y Películas -->
+    <h2>Mis Series y Películas Favoritas</h2>
+    <table id="favoritesTable">
+        <thead>
+            <tr>
+                <th>Película/Serie</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Breaking Bad</td>
+                <td>Drama</td>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>Ciencia Ficción</td>
+            </tr>
+            <tr>
+                <td>The Crown</td>
+                <td>Histórica</td>
+            </tr>
+            <tr>
+                <td>Avengers: Endgame</td>
+                <td>Acción</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="invertOrderButton">Invertir Orden</button>
+
+    <!-- Botones para aumentar/disminuir tamaño de imagen -->
+    <button id="increaseSize">Aumentar tamaño imagen</button>
+    <button id="decreaseSize">Disminuir tamaño imagen</button>
+
+    <!-- Cargando... -->
+    <p id="loadingMessage" style="display: none;">Cargando...</p>
+
+    <!-- Lista de tareas -->
+    <h3>Lista de Tareas</h3>
+    <input type="text" id="taskInput" placeholder="Nueva tarea">
+    <button id="addTaskButton">Añadir Tarea</button>
+    <ul id="taskList"></ul>
+
+    <!-- Modo Claro/Oscuro -->
+    <button id="toggleModeButton">Cambiar a Modo Oscuro</button>
+
+    <!-- Cambio de título -->
+    <h3>Cambiar Título del Blog</h3>
+    <input type="text" id="titleInput" placeholder="Nuevo título">
+    <button id="changeTitleButton">Cambiar Título</button>
+
+    <!-- Rotar Imagen -->
+    <button id="rotateButton">Rotar Imagen</button>
+
+    <!-- Mostrar hora actual -->
+    <button id="showTimeButton">Mostrar Hora</button>
+
+    <!-- Validación de Formulario -->
+    <h3>Formulario</h3>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo" required>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <!-- Tiempo que el usuario ha pasado en la página -->
+    <h3>Tiempo en la página</h3>
+    <p id="timeSpent">Tiempo pasado: 0 segundos</p>
+
+    <!-- Descripción -->
+    <p id="description">Este es un blog sobre mis intereses y actividades.</p>
+    <button id="toggleDescriptionButton">Mostrar/Ocultar Descripción</button>
+
+    <!-- Fecha actual en pie -->
+    <footer>
+        <p id="currentDate"></p>
+    </footer>
+
+    <!-- Selector de color de fondo -->
+    <h3>Cambiar color de fondo</h3>
+    <input type="color" id="backgroundColorPicker">
+
+    <!-- Cambiar tamaño de la fuente -->
+    <button id="increaseFontSize">Aumentar tamaño de fuente</button>
+    <button id="decreaseFontSize">Disminuir tamaño de fuente</button>
+
+    <!-- Reproducir sonido -->
+    <button id="playSoundButton">Reproducir Sonido</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
